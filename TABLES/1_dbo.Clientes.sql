@@ -7,8 +7,9 @@ GO
 CREATE TABLE dbo.Clientes
 (
 	IDCliente INTEGER IDENTITY (1,1) PRIMARY KEY,
-	Nombre	NVARCHAR(255),
-	ApellidoPaterno NVARCHAR(255),
-	ApellidoMaterno NVARCHAR(255),
-	FechaNacimiento DATE
+	Nombre	NVARCHAR(255) NOT NULL,
+	ApellidoPaterno NVARCHAR(255) NOT NULL,
+	ApellidoMaterno NVARCHAR(255) NOT NULL,
+	FechaNacimiento DATE NOT NULL,
+	FechaRegistro DATE NOT NULL
 )
